@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C1FA65685ACD61DE0A8989 /* Pods_meli_meliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D500E8E5BFA85EA1FFB490B8 /* Pods_meli_meliUITests.framework */; };
+		13B4EFB825D65525F5F58AF3 /* Pods_meliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5058087D41F487C206913D /* Pods_meliTests.framework */; };
+		7518C61CCEE0E6B944B929E8 /* Pods_meli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD20D2EBCE412A842C7BA042 /* Pods_meli.framework */; };
 		E64920992BE44EE100632DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920982BE44EE100632DEF /* AppDelegate.swift */; };
 		E649209B2BE44EE100632DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649209A2BE44EE100632DEF /* SceneDelegate.swift */; };
 		E649209D2BE44EE100632DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649209C2BE44EE100632DEF /* ViewController.swift */; };
@@ -16,6 +19,34 @@
 		E64920B02BE44EE300632DEF /* meliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920AF2BE44EE300632DEF /* meliTests.swift */; };
 		E64920BA2BE44EE400632DEF /* meliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920B92BE44EE400632DEF /* meliUITests.swift */; };
 		E64920BC2BE44EE400632DEF /* meliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920BB2BE44EE400632DEF /* meliUITestsLaunchTests.swift */; };
+		E64920CC2BE4501200632DEF /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920CB2BE4501200632DEF /* SearchRouter.swift */; };
+		E64920D12BE4516100632DEF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920D02BE4516100632DEF /* SearchController.swift */; };
+		E64920D42BE4517C00632DEF /* SearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920D32BE4517C00632DEF /* SearchProtocols.swift */; };
+		E64920D72BE4520D00632DEF /* SearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920D62BE4520D00632DEF /* SearchEntity.swift */; };
+		E64920DA2BE4554100632DEF /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920D92BE4554100632DEF /* SearchPresenter.swift */; };
+		E64920DD2BE456B400632DEF /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920DC2BE456B400632DEF /* SearchInteractor.swift */; };
+		E64920E02BE46B0300632DEF /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920DF2BE46B0300632DEF /* Alerts.swift */; };
+		E64920E92BE48FDC00632DEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E64920E72BE48FDC00632DEF /* Localizable.strings */; };
+		E64920EC2BE4909A00632DEF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920EB2BE4909A00632DEF /* Strings.swift */; };
+		E64920EE2BE4969000632DEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920ED2BE4969000632DEF /* Constants.swift */; };
+		E64920FE2BE49AFE00632DEF /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920F32BE49AFE00632DEF /* ListPresenter.swift */; };
+		E64920FF2BE49AFE00632DEF /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920F52BE49AFE00632DEF /* ListProtocols.swift */; };
+		E64921002BE49AFE00632DEF /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920F72BE49AFE00632DEF /* ListRouter.swift */; };
+		E64921012BE49AFE00632DEF /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920F92BE49AFE00632DEF /* ListController.swift */; };
+		E64921032BE4A3F600632DEF /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921022BE4A3F600632DEF /* ProductsCell.swift */; };
+		E64921052BE5EDFC00632DEF /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921042BE5EDFC00632DEF /* ImageHelper.swift */; };
+		E64921072BE5FD2B00632DEF /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921062BE5FD2B00632DEF /* Format.swift */; };
+		E64921152BE6973B00632DEF /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921082BE6973B00632DEF /* DetailEntity.swift */; };
+		E64921162BE6973B00632DEF /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649210A2BE6973B00632DEF /* DetailInteractor.swift */; };
+		E64921172BE6973B00632DEF /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649210C2BE6973B00632DEF /* DetailPresenter.swift */; };
+		E64921182BE6973B00632DEF /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649210E2BE6973B00632DEF /* DetailProtocols.swift */; };
+		E64921192BE6973B00632DEF /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921102BE6973B00632DEF /* DetailRouter.swift */; };
+		E649211A2BE6973B00632DEF /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921122BE6973B00632DEF /* DetailController.swift */; };
+		E649211C2BE6BC6000632DEF /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649211B2BE6BC6000632DEF /* PictureCell.swift */; };
+		E649211E2BE95E0800632DEF /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649211D2BE95E0800632DEF /* CarouselView.swift */; };
+		E64921202BE9895900632DEF /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649211F2BE9895900632DEF /* AttributesView.swift */; };
+		E64921222BE990D300632DEF /* SellerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921212BE990D300632DEF /* SellerView.swift */; };
+		E64921242BE9984D00632DEF /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921232BE9984D00632DEF /* PriceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +67,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39FF2DB16CDEFEF6377099C5 /* Pods-meliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meliTests.release.xcconfig"; path = "Target Support Files/Pods-meliTests/Pods-meliTests.release.xcconfig"; sourceTree = "<group>"; };
+		4AC1D9A680015FA0F2BBBF9B /* Pods-meliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meliTests.debug.xcconfig"; path = "Target Support Files/Pods-meliTests/Pods-meliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		692D7F84989455357E14F727 /* Pods-meli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli.release.xcconfig"; path = "Target Support Files/Pods-meli/Pods-meli.release.xcconfig"; sourceTree = "<group>"; };
+		6D6DDA6EF7909F7831989CAF /* Pods-meli-meliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli-meliUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli-meliUITests/Pods-meli-meliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DFAE15A476E42056EE7AA57 /* Pods-meli-meliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli-meliUITests.release.xcconfig"; path = "Target Support Files/Pods-meli-meliUITests/Pods-meli-meliUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD946DE5F375ED470AC62ABD /* Pods-meli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli.debug.xcconfig"; path = "Target Support Files/Pods-meli/Pods-meli.debug.xcconfig"; sourceTree = "<group>"; };
+		CD20D2EBCE412A842C7BA042 /* Pods_meli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D500E8E5BFA85EA1FFB490B8 /* Pods_meli_meliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_meliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64920952BE44EE100632DEF /* meli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64920982BE44EE100632DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E649209A2BE44EE100632DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +88,35 @@
 		E64920B52BE44EE400632DEF /* meliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64920B92BE44EE400632DEF /* meliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliUITests.swift; sourceTree = "<group>"; };
 		E64920BB2BE44EE400632DEF /* meliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E64920CB2BE4501200632DEF /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		E64920D02BE4516100632DEF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E64920D32BE4517C00632DEF /* SearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocols.swift; sourceTree = "<group>"; };
+		E64920D62BE4520D00632DEF /* SearchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEntity.swift; sourceTree = "<group>"; };
+		E64920D92BE4554100632DEF /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		E64920DC2BE456B400632DEF /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		E64920DF2BE46B0300632DEF /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		E64920E82BE48FDC00632DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Setting/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E64920EB2BE4909A00632DEF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		E64920ED2BE4969000632DEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E64920F32BE49AFE00632DEF /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		E64920F52BE49AFE00632DEF /* ListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		E64920F72BE49AFE00632DEF /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		E64920F92BE49AFE00632DEF /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		E64921022BE4A3F600632DEF /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
+		E64921042BE5EDFC00632DEF /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		E64921062BE5FD2B00632DEF /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		E64921082BE6973B00632DEF /* DetailEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
+		E649210A2BE6973B00632DEF /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		E649210C2BE6973B00632DEF /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		E649210E2BE6973B00632DEF /* DetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		E64921102BE6973B00632DEF /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		E64921122BE6973B00632DEF /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		E649211B2BE6BC6000632DEF /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		E649211D2BE95E0800632DEF /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		E649211F2BE9895900632DEF /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
+		E64921212BE990D300632DEF /* SellerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerView.swift; sourceTree = "<group>"; };
+		E64921232BE9984D00632DEF /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		FE5058087D41F487C206913D /* Pods_meliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7518C61CCEE0E6B944B929E8 /* Pods_meli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B4EFB825D65525F5F58AF3 /* Pods_meliTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +140,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C1FA65685ACD61DE0A8989 /* Pods_meli_meliUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1231C3AFBD4FD0C6553A5BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD946DE5F375ED470AC62ABD /* Pods-meli.debug.xcconfig */,
+				692D7F84989455357E14F727 /* Pods-meli.release.xcconfig */,
+				6D6DDA6EF7909F7831989CAF /* Pods-meli-meliUITests.debug.xcconfig */,
+				6DFAE15A476E42056EE7AA57 /* Pods-meli-meliUITests.release.xcconfig */,
+				4AC1D9A680015FA0F2BBBF9B /* Pods-meliTests.debug.xcconfig */,
+				39FF2DB16CDEFEF6377099C5 /* Pods-meliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C1D542CA2AC2D466964E20D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD20D2EBCE412A842C7BA042 /* Pods_meli.framework */,
+				D500E8E5BFA85EA1FFB490B8 /* Pods_meli_meliUITests.framework */,
+				FE5058087D41F487C206913D /* Pods_meliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E649208C2BE44EE100632DEF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +177,8 @@
 				E64920AE2BE44EE300632DEF /* meliTests */,
 				E64920B82BE44EE400632DEF /* meliUITests */,
 				E64920962BE44EE100632DEF /* Products */,
+				1231C3AFBD4FD0C6553A5BA4 /* Pods */,
+				9C1D542CA2AC2D466964E20D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +195,10 @@
 		E64920972BE44EE100632DEF /* meli */ = {
 			isa = PBXGroup;
 			children = (
+				E64920EA2BE4908F00632DEF /* Localizable */,
+				E64920E12BE4731D00632DEF /* Helpers */,
+				E64920DE2BE46AF800632DEF /* Utils */,
+				E64920C82BE44F7E00632DEF /* Modules */,
 				E64920982BE44EE100632DEF /* AppDelegate.swift */,
 				E649209A2BE44EE100632DEF /* SceneDelegate.swift */,
 				E649209C2BE44EE100632DEF /* ViewController.swift */,
@@ -106,6 +206,7 @@
 				E64920A12BE44EE300632DEF /* Assets.xcassets */,
 				E64920A32BE44EE300632DEF /* LaunchScreen.storyboard */,
 				E64920A62BE44EE300632DEF /* Info.plist */,
+				E64920E72BE48FDC00632DEF /* Localizable.strings */,
 			);
 			path = meli;
 			sourceTree = "<group>";
@@ -127,6 +228,213 @@
 			path = meliUITests;
 			sourceTree = "<group>";
 		};
+		E64920C82BE44F7E00632DEF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E64921142BE6973B00632DEF /* Detail */,
+				E64920FB2BE49AFE00632DEF /* List */,
+				E64920C92BE44F8E00632DEF /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E64920C92BE44F8E00632DEF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E64920DB2BE4569B00632DEF /* Interactor */,
+				E64920D82BE4551A00632DEF /* Presenter */,
+				E64920D52BE451F600632DEF /* Entity */,
+				E64920D22BE4516E00632DEF /* Protocols */,
+				E64920CD2BE4511900632DEF /* View */,
+				E64920CA2BE4500500632DEF /* Router */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E64920CA2BE4500500632DEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E64920CB2BE4501200632DEF /* SearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E64920CD2BE4511900632DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E64920D02BE4516100632DEF /* SearchController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E64920D22BE4516E00632DEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E64920D32BE4517C00632DEF /* SearchProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E64920D52BE451F600632DEF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E64920D62BE4520D00632DEF /* SearchEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E64920D82BE4551A00632DEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E64920D92BE4554100632DEF /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E64920DB2BE4569B00632DEF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E64920DC2BE456B400632DEF /* SearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E64920DE2BE46AF800632DEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E64920DF2BE46B0300632DEF /* Alerts.swift */,
+				E64920ED2BE4969000632DEF /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E64920E12BE4731D00632DEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E64921042BE5EDFC00632DEF /* ImageHelper.swift */,
+				E64921062BE5FD2B00632DEF /* Format.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E64920EA2BE4908F00632DEF /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				E64920EB2BE4909A00632DEF /* Strings.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		E64920F42BE49AFE00632DEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E64920F32BE49AFE00632DEF /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E64920F62BE49AFE00632DEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E64920F52BE49AFE00632DEF /* ListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E64920F82BE49AFE00632DEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E64920F72BE49AFE00632DEF /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E64920FA2BE49AFE00632DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E64920F92BE49AFE00632DEF /* ListController.swift */,
+				E64921022BE4A3F600632DEF /* ProductsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E64920FB2BE49AFE00632DEF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E64920F42BE49AFE00632DEF /* Presenter */,
+				E64920F62BE49AFE00632DEF /* Protocols */,
+				E64920F82BE49AFE00632DEF /* Router */,
+				E64920FA2BE49AFE00632DEF /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		E64921092BE6973B00632DEF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E64921082BE6973B00632DEF /* DetailEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E649210B2BE6973B00632DEF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E649210A2BE6973B00632DEF /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E649210D2BE6973B00632DEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E649210C2BE6973B00632DEF /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E649210F2BE6973B00632DEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E649210E2BE6973B00632DEF /* DetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E64921112BE6973B00632DEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E64921102BE6973B00632DEF /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E64921132BE6973B00632DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E64921122BE6973B00632DEF /* DetailController.swift */,
+				E649211B2BE6BC6000632DEF /* PictureCell.swift */,
+				E649211D2BE95E0800632DEF /* CarouselView.swift */,
+				E649211F2BE9895900632DEF /* AttributesView.swift */,
+				E64921212BE990D300632DEF /* SellerView.swift */,
+				E64921232BE9984D00632DEF /* PriceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E64921142BE6973B00632DEF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E64921092BE6973B00632DEF /* Entity */,
+				E649210B2BE6973B00632DEF /* Interactor */,
+				E649210D2BE6973B00632DEF /* Presenter */,
+				E649210F2BE6973B00632DEF /* Protocols */,
+				E64921112BE6973B00632DEF /* Router */,
+				E64921132BE6973B00632DEF /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +442,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64920BF2BE44EE400632DEF /* Build configuration list for PBXNativeTarget "meli" */;
 			buildPhases = (
+				7D837F6A0E851B4FA67D8398 /* [CP] Check Pods Manifest.lock */,
 				E64920912BE44EE100632DEF /* Sources */,
 				E64920922BE44EE100632DEF /* Frameworks */,
 				E64920932BE44EE100632DEF /* Resources */,
+				200D20135E31C1E00CAAC959 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +461,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64920C22BE44EE400632DEF /* Build configuration list for PBXNativeTarget "meliTests" */;
 			buildPhases = (
+				C89583E13EF2C0259A5A741C /* [CP] Check Pods Manifest.lock */,
 				E64920A72BE44EE300632DEF /* Sources */,
 				E64920A82BE44EE300632DEF /* Frameworks */,
 				E64920A92BE44EE300632DEF /* Resources */,
@@ -169,9 +480,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64920C52BE44EE400632DEF /* Build configuration list for PBXNativeTarget "meliUITests" */;
 			buildPhases = (
+				FE99AF303D4E85D37AC89A65 /* [CP] Check Pods Manifest.lock */,
 				E64920B12BE44EE400632DEF /* Sources */,
 				E64920B22BE44EE400632DEF /* Frameworks */,
 				E64920B32BE44EE400632DEF /* Resources */,
+				0B47B06AD9CB4BC55D93B5A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64920A22BE44EE300632DEF /* Assets.xcassets in Resources */,
+				E64920E92BE48FDC00632DEF /* Localizable.strings in Resources */,
 				E64920A52BE44EE300632DEF /* Base in Resources */,
 				E64920A02BE44EE100632DEF /* Base in Resources */,
 			);
@@ -253,14 +567,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B47B06AD9CB4BC55D93B5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli-meliUITests/Pods-meli-meliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli-meliUITests/Pods-meli-meliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meli-meliUITests/Pods-meli-meliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		200D20135E31C1E00CAAC959 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli/Pods-meli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli/Pods-meli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meli/Pods-meli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D837F6A0E851B4FA67D8398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89583E13EF2C0259A5A741C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE99AF303D4E85D37AC89A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli-meliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E64920912BE44EE100632DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64921182BE6973B00632DEF /* DetailProtocols.swift in Sources */,
+				E64920CC2BE4501200632DEF /* SearchRouter.swift in Sources */,
+				E649211C2BE6BC6000632DEF /* PictureCell.swift in Sources */,
+				E64920FE2BE49AFE00632DEF /* ListPresenter.swift in Sources */,
+				E64920EC2BE4909A00632DEF /* Strings.swift in Sources */,
+				E64920D12BE4516100632DEF /* SearchController.swift in Sources */,
 				E649209D2BE44EE100632DEF /* ViewController.swift in Sources */,
+				E64921032BE4A3F600632DEF /* ProductsCell.swift in Sources */,
+				E64920DD2BE456B400632DEF /* SearchInteractor.swift in Sources */,
+				E64921012BE49AFE00632DEF /* ListController.swift in Sources */,
+				E64921192BE6973B00632DEF /* DetailRouter.swift in Sources */,
+				E64921002BE49AFE00632DEF /* ListRouter.swift in Sources */,
+				E64921152BE6973B00632DEF /* DetailEntity.swift in Sources */,
+				E649211E2BE95E0800632DEF /* CarouselView.swift in Sources */,
+				E64921242BE9984D00632DEF /* PriceView.swift in Sources */,
+				E64920D42BE4517C00632DEF /* SearchProtocols.swift in Sources */,
 				E64920992BE44EE100632DEF /* AppDelegate.swift in Sources */,
+				E64921072BE5FD2B00632DEF /* Format.swift in Sources */,
+				E64921202BE9895900632DEF /* AttributesView.swift in Sources */,
+				E64921052BE5EDFC00632DEF /* ImageHelper.swift in Sources */,
+				E64920E02BE46B0300632DEF /* Alerts.swift in Sources */,
+				E64921172BE6973B00632DEF /* DetailPresenter.swift in Sources */,
+				E649211A2BE6973B00632DEF /* DetailController.swift in Sources */,
+				E64920FF2BE49AFE00632DEF /* ListProtocols.swift in Sources */,
+				E64921222BE990D300632DEF /* SellerView.swift in Sources */,
 				E649209B2BE44EE100632DEF /* SceneDelegate.swift in Sources */,
+				E64920DA2BE4554100632DEF /* SearchPresenter.swift in Sources */,
+				E64921162BE6973B00632DEF /* DetailInteractor.swift in Sources */,
+				E64920D72BE4520D00632DEF /* SearchEntity.swift in Sources */,
+				E64920EE2BE4969000632DEF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +755,14 @@
 				E64920A42BE44EE300632DEF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E64920E72BE48FDC00632DEF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64920E82BE48FDC00632DEF /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,12 +889,14 @@
 		};
 		E64920C02BE44EE400632DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD946DE5F375ED470AC62ABD /* Pods-meli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYW52QAKQ3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = meli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +919,14 @@
 		};
 		E64920C12BE44EE400632DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692D7F84989455357E14F727 /* Pods-meli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYW52QAKQ3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = meli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +949,7 @@
 		};
 		E64920C32BE44EE400632DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC1D9A680015FA0F2BBBF9B /* Pods-meliTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +970,7 @@
 		};
 		E64920C42BE44EE400632DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39FF2DB16CDEFEF6377099C5 /* Pods-meliTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +991,7 @@
 		};
 		E64920C62BE44EE400632DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6DDA6EF7909F7831989CAF /* Pods-meli-meliUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +1010,7 @@
 		};
 		E64920C72BE44EE400632DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFAE15A476E42056EE7AA57 /* Pods-meli-meliUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

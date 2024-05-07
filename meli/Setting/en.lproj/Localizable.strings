@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  meli
+
+  Created by jonnattan Choque on 2/05/24.
+  
+*/
+"General.Alert.button" = "Entendido";
+"General.payment" = "Mercado pago";
+
+"Search.button.title" = "Buscar";
+"Search.placeholder" = "Buscar productos, marcas y más...";
+"Search.AlertEmpty.title" = "Espera!";
+"Search.AlertEmpty.message" = "Debes escribir lo que quieres buscar";
+"Search.AlertLoading.title" = "Consultando";
+"Search.AlertLoading.message" = "Por favor espera";
+"Search.AlertError.title" = "Error";
+"Search.AlertError.message" = "No fue posible realizar la búsqueda";
+"Search.AlertEmptyResults.title" = "Ups";
+"Search.AlertEmptyResults.message" = "No se encontraron resultados";
+
+"List.title" = "Listado";
+"List.back" = "Volver";
+"List.stock" = "Cantidad disponible: ";
+"List.search" = "Búsqueda: ";
+"List.results" = " resultados";
+
+"Detail.isNew" = "Nuevo";
+"Detail.noIsNew" = "Usado";
+"Detail.internationalPay" = "Compra internacional";
+"Detail.stock" = "Cantidad disponible: ";
+"Detail.attributes" = "Características";
+"Detail.seller" = "Información del vendedor";
+"Detail.power" = "MercadolLíder ";
+"Detail.sales" = "Ventas totales:  ";
