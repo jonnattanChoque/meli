@@ -16,7 +16,7 @@
 		E64920A02BE44EE100632DEF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E649209F2BE44EE100632DEF /* Base */; };
 		E64920A22BE44EE300632DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64920A12BE44EE300632DEF /* Assets.xcassets */; };
 		E64920A52BE44EE300632DEF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E64920A42BE44EE300632DEF /* Base */; };
-		E64920B02BE44EE300632DEF /* meliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920AF2BE44EE300632DEF /* meliTests.swift */; };
+		E64920B02BE44EE300632DEF /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920AF2BE44EE300632DEF /* SearchPresenterTests.swift */; };
 		E64920BA2BE44EE400632DEF /* meliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920B92BE44EE400632DEF /* meliUITests.swift */; };
 		E64920BC2BE44EE400632DEF /* meliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920BB2BE44EE400632DEF /* meliUITestsLaunchTests.swift */; };
 		E64920CC2BE4501200632DEF /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64920CB2BE4501200632DEF /* SearchRouter.swift */; };
@@ -47,6 +47,12 @@
 		E64921202BE9895900632DEF /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649211F2BE9895900632DEF /* AttributesView.swift */; };
 		E64921222BE990D300632DEF /* SellerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921212BE990D300632DEF /* SellerView.swift */; };
 		E64921242BE9984D00632DEF /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921232BE9984D00632DEF /* PriceView.swift */; };
+		E64921262BE9D0F400632DEF /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921252BE9D0F400632DEF /* ListPresenterTests.swift */; };
+		E64921282BE9D2B600632DEF /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921272BE9D2B600632DEF /* DetailPresenterTests.swift */; };
+		E649212C2BE9D6F400632DEF /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649212B2BE9D6F400632DEF /* DetailInteractorTests.swift */; };
+		E649212E2BE9F2BD00632DEF /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649212D2BE9F2BD00632DEF /* SearchInteractorTests.swift */; };
+		E64921312BE9F6FE00632DEF /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921302BE9F6FE00632DEF /* SearchViewTests.swift */; };
+		E64921342BEA05F700632DEF /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64921332BEA05F700632DEF /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +90,7 @@
 		E64920A42BE44EE300632DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64920A62BE44EE300632DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64920AB2BE44EE300632DEF /* meliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E64920AF2BE44EE300632DEF /* meliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliTests.swift; sourceTree = "<group>"; };
+		E64920AF2BE44EE300632DEF /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 		E64920B52BE44EE400632DEF /* meliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64920B92BE44EE400632DEF /* meliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliUITests.swift; sourceTree = "<group>"; };
 		E64920BB2BE44EE400632DEF /* meliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -116,6 +122,12 @@
 		E649211F2BE9895900632DEF /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
 		E64921212BE990D300632DEF /* SellerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerView.swift; sourceTree = "<group>"; };
 		E64921232BE9984D00632DEF /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		E64921252BE9D0F400632DEF /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		E64921272BE9D2B600632DEF /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		E649212B2BE9D6F400632DEF /* DetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
+		E649212D2BE9F2BD00632DEF /* SearchInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorTests.swift; sourceTree = "<group>"; };
+		E64921302BE9F6FE00632DEF /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
+		E64921332BEA05F700632DEF /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		FE5058087D41F487C206913D /* Pods_meliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,7 +226,10 @@
 		E64920AE2BE44EE300632DEF /* meliTests */ = {
 			isa = PBXGroup;
 			children = (
-				E64920AF2BE44EE300632DEF /* meliTests.swift */,
+				E64921322BEA05DE00632DEF /* Network */,
+				E649212F2BE9F6EB00632DEF /* View */,
+				E649212A2BE9D6DC00632DEF /* Interactor */,
+				E64921292BE9D6C000632DEF /* Presenter */,
 			);
 			path = meliTests;
 			sourceTree = "<group>";
@@ -433,6 +448,41 @@
 				E64921132BE6973B00632DEF /* View */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		E64921292BE9D6C000632DEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E64921252BE9D0F400632DEF /* ListPresenterTests.swift */,
+				E64921272BE9D2B600632DEF /* DetailPresenterTests.swift */,
+				E64920AF2BE44EE300632DEF /* SearchPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E649212A2BE9D6DC00632DEF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E649212B2BE9D6F400632DEF /* DetailInteractorTests.swift */,
+				E649212D2BE9F2BD00632DEF /* SearchInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E649212F2BE9F6EB00632DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E64921302BE9F6FE00632DEF /* SearchViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E64921322BEA05DE00632DEF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E64921332BEA05F700632DEF /* MockURLProtocol.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -712,7 +762,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64920B02BE44EE300632DEF /* meliTests.swift in Sources */,
+				E64921342BEA05F700632DEF /* MockURLProtocol.swift in Sources */,
+				E64920B02BE44EE300632DEF /* SearchPresenterTests.swift in Sources */,
+				E64921282BE9D2B600632DEF /* DetailPresenterTests.swift in Sources */,
+				E64921312BE9F6FE00632DEF /* SearchViewTests.swift in Sources */,
+				E64921262BE9D0F400632DEF /* ListPresenterTests.swift in Sources */,
+				E649212E2BE9F2BD00632DEF /* SearchInteractorTests.swift in Sources */,
+				E649212C2BE9D6F400632DEF /* DetailInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,7 +861,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -868,7 +924,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

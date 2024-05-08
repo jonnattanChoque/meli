@@ -13,7 +13,7 @@ class DetailInteractor: DetailInteractorProtocol {
     var presenter: DetailPresenterViewProtocol?
     private let status: Int = 200
     private var model: DetailModel?
-    
+
     func detailInfo(id: String) {
         let url = Constants.endpointDetails.appending(id)
         Alamofire.request(url).responseObject { (response: DataResponse<DetailModel>) in
@@ -56,3 +56,4 @@ class DetailInteractor: DetailInteractorProtocol {
         }
     }
 }
+

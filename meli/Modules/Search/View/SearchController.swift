@@ -41,6 +41,7 @@ class SearchViewController: UIViewController {
         textfield.clearButtonMode = UITextField.ViewMode.whileEditing
         textfield.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         textfield.delegate = self
+        textfield.accessibilityIdentifier = "searchTextField"
         return textfield
     }()
     
@@ -51,6 +52,7 @@ class SearchViewController: UIViewController {
         button.backgroundColor = UIColor(named: Constants.primaryColor)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(self.buttonPressed(_:)), for: .touchUpInside)
+        button.accessibilityIdentifier = "buttonSearch"
         return button
     }()
     

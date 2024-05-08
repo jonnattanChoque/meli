@@ -165,17 +165,3 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
         return CGSize(width: size, height: size * (UIDevice.current.orientation.isLandscape ? cellLandscape : cellPortrain))
     }
 }
-
-extension ListViewController: ListViewProtocol{
-    func showErrorResults() {
-        self.dismiss(animated: true)
-        let alert = Alerts.shared.simple(title: Strings.Search.AlertErrorTitle, message: Strings.Search.AlertErrorMessage)
-        self.present(alert, animated: true)
-    }
-    
-    func showEmptyResults() {
-        self.dismiss(animated: true)
-        let alert = Alerts.shared.simple(title: Strings.Search.AlertEmptyResultsTitle, message: Strings.Search.AlertEmptyResultsMessage)
-        self.present(alert, animated: true)
-    }
-}

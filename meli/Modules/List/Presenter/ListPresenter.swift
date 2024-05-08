@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class ListPresenter: ListPresenterProtocol {
-    var view: ListViewProtocol?
     var router: ListRouterProtocol?
     
     func showDetail(navigationController: UINavigationController, id: String) {

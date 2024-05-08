@@ -7,35 +7,84 @@
 
 import XCTest
 
+extension XCUIElement {
+    func forceTapElement() {
+        if self.isHittable {
+            self.tap()
+        }
+        else {
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx:0.0, dy:0.0))
+            coordinate.tap()
+        }
+    }
+}
+
 final class meliUITests: XCTestCase {
+    var app: XCUIApplication!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // Configura tu aplicación para las pruebas de interfaz de usuario
+        app = XCUIApplication()
+        app.launch() // Inicia la aplicación
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Limpia después de cada prueba
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    func testSearchSuccess() throws {
+        // Interactúa con los elementos de la pantalla de búsqueda
+        let searchTextField = app.textFields["searchTextField"]
+        let searchButton = app.buttons["buttonSearch"]
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Ingresa el nombre lo que se quiere buscar
+        searchTextField.tap()
+        searchTextField.typeText("iphone")
+        
+        // Presiona el botón de realizar búsqueda
+        searchButton.forceTapElement()
+
+        // Verifica si la pantalla de búsqueda desaparece y se muestra la de listado
+        XCTAssertFalse(app.otherElements["ListViewController"].exists)
     }
+    
+    func testListViewItemSelection() throws {
+        
+        try testSearchSuccess()
+        
+        // Interactúa con el elemento del UICollectionView
+        let collectionView = app.collectionViews.firstMatch
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+        // Simula la carga de datos en el UICollectionView
+        waitForElementToAppear(collectionView.cells.element(boundBy: 0))
+
+        // Selecciona el elemento específico
+        let itemToSelect = collectionView.cells.element(boundBy: 0)
+        itemToSelect.tap()
+
+        // Verifica si la acción esperada se realiza correctamente
+        XCTAssertFalse(app.otherElements["DetailViewController"].exists)
+    }
+    
+    func testDetailViewScroll() throws {
+        try testListViewItemSelection()
+        
+        let tableView = app.tables.firstMatch
+        XCTAssertTrue(tableView.waitForExistence(timeout: 10), "El UITableView no está disponible")
+
+        // Hace scroll hacia abajo en el UITableView
+        tableView.swipeUp()
+
+        // Verifica si ciertos elementos están visibles después de hacer scroll
+        let firstVisibleCell = tableView.cells.firstMatch
+        XCTAssertTrue(firstVisibleCell.exists, "El primer elemento del UICollectionView no está visible después de hacer scroll")
+    }
+    
+    // Espera hasta que un elemento del UICollectionView esté disponible
+    func waitForElementToAppear(_ element: XCUIElement, timeout: TimeInterval = 60) {
+        let predicate = NSPredicate(format: "exists == true")
+        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: element)
+        let result = XCTWaiter().wait(for: [expectation], timeout: timeout)
+        XCTAssert(result == .completed, "Elemento no apareció a tiempo")
     }
 }

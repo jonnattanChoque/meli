@@ -17,7 +17,6 @@ class ListRouter: ListRouterProtocol {
         
         view.presenter = presenter
         view.model = result
-        presenter.view = view
         presenter.router = router
         
         return view

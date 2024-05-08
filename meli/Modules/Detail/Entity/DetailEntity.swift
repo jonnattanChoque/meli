@@ -13,8 +13,8 @@ class DetailModel: Mappable {
     var id: String = ""
     var siteID: String = ""
     var title: String = ""
-    var price: Double = 0
     var sellerID: Int = 0
+    var price: Double = 0
     var basePrice: Double = 0
     var originalPrice: Int = 0
     var currencyID: String = ""
